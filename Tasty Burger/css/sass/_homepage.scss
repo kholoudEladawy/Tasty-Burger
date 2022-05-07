@@ -1,0 +1,1389 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #FFF;
+    font-family: 'Lato', sans-serif;
+    overflow-y: hidden;
+    a
+    {
+        color: #000;
+        text-transform: uppercase;
+    }
+    a:hover
+    {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+$paragraphcolor:rgb(174, 174, 174);
+@mixin sochial
+{
+    i
+    {
+        padding: 7px;
+        color: #fff;
+        cursor: pointer;
+        &:hover
+        {
+            opacity: 0.7;    
+        }
+    }
+    .fa-facebook
+    {
+        background-color: #3b5998;
+    }
+    .fa-twitter
+    {
+        background-color: #1da1f2;
+
+    }
+    .fa-google-plus
+    {
+        background-color: #dd4b39;
+
+    }
+    .fa-dribbble
+    {
+        background-color: #ea4c89;
+
+    }
+}
+@mixin mainbutton
+{
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #05c46b;
+    color: #fff;
+    border: 1px solid #d0d0d0;
+}
+@mixin outlinebutton
+{
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #d0d0d0;
+    &:hover
+    {
+        background-color: #05c46b;
+        color: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+}
+/*start navbar*/
+.nav-bar
+{
+    .navbar-brand
+    {
+        h1
+        {
+            display: inline-block;
+            margin: 0;
+            position: relative;
+            top: 12px;
+            font-family: 'Patua One', cursive;
+        }
+        span
+        {
+            color: red;
+            position: relative;
+            top: -22px;
+            left: -92px;
+            letter-spacing: 6px;
+            font-family: 'Crete Round', serif;
+        }
+        &:hover
+        {
+            opacity: 0.7;
+        }
+    }
+    .navbar-toggler
+    {
+        background: rgba(236, 236, 236, 0.91);
+        padding: 10px 20px;
+
+        span
+        {
+            font-size: 15px;
+        }
+        &:hover
+        {
+            opacity: 0.8;
+        }
+    }
+    .navbar-collapse
+    {
+        text-align: center;
+        
+        ul
+        {
+            li
+            {
+                a
+                {
+                    &:hover
+                    {
+                        opacity: 0.7;
+                    }
+                }
+                .dropdown-item
+                {
+                    &:hover
+                    {
+                        background-color: rgba(240, 240, 240, 0.85);
+                    }
+                }
+                .dropdown-menu
+                {
+                    @media(min-width:320px) and (max-width:991px)
+                    {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+/*End navbar*/
+
+/*Start Header*/
+.header
+{
+    @media (min-width:320px) and (max-width:1200px)
+    {
+        text-align: center;
+    }
+    .Fresh
+    {
+         margin-top: 100px;
+        @media (min-width:320px) and (max-width:768px)
+        {
+            margin-top: 50px;
+        }
+    }
+    .car-fix
+    {
+        @media (min-width:320px) and (max-width:768px)
+        {
+            padding: 0;
+        }
+    }
+    h5
+    {
+        font-weight: 500;
+    }
+    h1
+    {
+        font-size: 50px;
+        font-weight: bold;
+        span
+        {
+            color: red;
+        }
+    }
+    p
+    {
+        margin-top: 15px;
+        color: $paragraphcolor;
+        font-size: 15px;
+    }
+    .btn1
+    {
+        @include mainbutton;
+        margin-top: 20px;
+       
+    }
+    .btn2
+    {
+       @include outlinebutton;
+    }
+    .carousel-inner
+    {
+        .carousel-item
+        {
+            img
+            {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+/*End  Header*/
+
+/*start aboutus*/
+.aboutus
+{
+    padding-right: 15px;
+     text-align: right; 
+    .container
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        @media (min-width:320px) and (max-width:768px)
+        {
+            padding-right: 15px;
+        }
+        div
+        {
+            @media(max-width:768px)
+            {
+                text-align: center;
+            }
+        }
+        .about-img
+        {
+            @media (min-width:320px) and (max-width:768px)
+            {
+                width: 60%;
+            }  
+        }
+        img
+        {
+            width: 100%;
+            height: 100%;
+            clear: both;
+        }
+         p:first-child
+        {
+            font-size: 30px;
+            font-weight: 500;
+            margin-top: 50px;
+            color: #000;
+            letter-spacing: 7px;
+        }
+        h1
+        {
+            font-size: 45px;
+            font-weight: bold;
+            span
+            {
+                color: red;
+            }
+            @media (min-width:320px) and (max-width:1200px)
+            {
+                font-size: 35px;
+            }
+        }
+        p
+        {
+            margin-top: 15px;
+            color:$paragraphcolor;
+            font-size: 15px;
+        }
+        button
+        {
+            @include outlinebutton;
+        }
+    }
+}
+/*End aboutus*/
+/*start OurSpecial*/
+.OurSpecial
+{
+    padding: 50px 0 ;
+    p:first-child
+    {
+        margin: 10px 0 ;   
+        font-size:25px;
+        letter-spacing: 7px;
+    }
+    h1
+    {
+        font-weight: bold;
+        span
+        {
+            color: red;
+        }
+    }
+    .card
+    {
+        @media (min-width:320px) and (max-width:768px)
+        {
+            text-align: center;
+        }
+        margin-top: 50px;
+        
+        img
+        {
+            width: 100%;
+        }
+        .card-body
+        {
+            h4
+            {
+                letter-spacing: 2px;
+                margin: 15px 0;
+                @media (min-width:320px) and (max-width:992px)
+                {
+                    letter-spacing: 0;
+                    font-size: 19px;
+                }
+            }
+            p
+            {
+                color: $paragraphcolor;
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+            .btn1
+            {
+                @include mainbutton;
+                margin: 0;
+            }
+            .btn2
+            {
+                @include  outlinebutton; 
+                margin: 0;
+            }
+        }
+    }
+    
+}
+/*End OurSpecial*/
+/*start bestfood*/
+.bestfood
+{
+    .container
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        max-width: 1366px;
+        @media (min-width:320px)
+        {
+            padding-right: 15px;
+        }
+    }
+    .bg3 , .bg4
+    {
+        padding: 0;
+        width: 100%;
+        .content
+        {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            color: #fff;
+            text-align: center;
+             @media (min-width:768px) and (max-width:992px)
+            {
+                top: 1%;
+                padding: 20px 0;
+            }
+            h2
+            {
+                font-weight: bold;
+            }
+            p
+            {
+                font-size: 14px;
+                margin: 15px 0;
+                width: 94%;
+                @media (min-width:768px) and (max-width:992px)
+                {
+                    margin: 0;
+                }
+            }
+            button
+            {
+                z-index: 2;
+                @include mainbutton;
+                border: none;
+                &:hover
+                {
+                    opacity: 0.8;
+                }
+                @media (min-width:768px) and (max-width:992px)
+                {
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+    }
+    img
+    {
+        width: 100%;
+        z-index: 1;
+    }
+}
+/*End bestfood*/
+/* start Our Work */
+.ourwork
+{
+    background: url(../../images/bg5.jpg) no-repeat;
+    width: 100%;
+    padding: 50px 0;
+    p:first-child
+    {
+        font-size: 25px;
+        letter-spacing: 7px;
+    }
+    h4
+    {
+        margin: 10px 0 ;    
+        letter-spacing: 2px;
+    }
+    h1
+    {
+        font-weight: bold;
+        span
+        {
+            color: red;
+        }
+    }
+    .row
+    {
+        .col-xs-8
+        {
+            width: 67%;
+        }
+        .col-xs-4
+        {
+            width: 33%;
+        }
+        h3
+        {
+            font-weight: bold;
+            text-align: center;
+        }
+        p
+        {
+            font-size: 19px;
+            color: #afafaf;
+            text-align: left;
+        }
+        .mt
+        {
+            margin-top:  50px;
+        }
+        .ssss3
+        {
+            top: 80px;
+            left: -50px;
+            @media (min-width:320px) and (max-width:1200px)
+            {
+                left: 0px;
+            }
+        }
+        .ssss4
+        {
+            top: 80px;
+            right: -80px;
+             @media (min-width:320px) and (max-width:1200px)
+            {
+                right: 0px !important;
+            }
+        }
+        .s1 , .s3
+        {
+            text-align: left;
+            position: relative;
+            left: -71px;
+            @media (min-width:320px) and (max-width:1200px)
+            {
+                left: 0px !important;
+            }
+        }
+        .s2 , .s4
+        {
+            text-align: left;
+            position: relative;
+            right: -71px;
+            @media (min-width:320px) and (max-width:1200px)
+            {
+                right: -20px;
+            }
+        }
+        .img-mac
+        {
+            position: relative;
+            left: 25%;
+            top: 50px;
+            @media (min-width:320px) and (max-width:1200px)
+            {
+                display: none;
+            }
+        }
+        
+    }
+    
+}
+/* End Our Work */
+
+/*Start blog*/
+.blog
+{
+    padding: 50px 0;
+    p:first-child
+    {
+        font-size: 25px;
+        letter-spacing: 7px;
+        color: #000;
+    }
+    h4
+    {
+        margin: 10px 0 ;    
+        letter-spacing: 2px;
+    }
+    h1
+    {
+        font-weight: bold;
+        
+        span
+        {
+            color: red;
+        }
+    }
+    p
+    {
+        color: $paragraphcolor;
+        font-size: 15px;
+    }
+    .row
+    {
+        margin-top: 60px;
+        .card
+        {
+            border: none;
+            
+            img
+            {
+                width:100%;
+                height: 100%;
+            }
+            .te
+            {
+                width: 30%;
+               transform: translate(115%,11%);
+            }
+            .card-body
+            {
+                span
+                {
+                    display: block;
+                    padding: 15px;
+                    margin: 20px;
+                    color: #a6a6a6;
+                    border-top: 1px solid $paragraphcolor;
+                    border-bottom: 1px solid $paragraphcolor;
+                    @media (min-width:320px) and (max-width:768px)
+                    {
+                        font-size: 15px;
+                    }
+                     @media (min-width:320px) and (max-width:1200px)
+                    {
+                        font-size: 12px;
+                    }
+                }
+                h4
+                {
+                    @media (min-width:320px) and (max-width:992px)
+                    {
+                        font-size: 19px;
+                    }
+                }
+                .btn1
+                {
+                    @include mainbutton;
+                    margin: 0;
+                }
+                .btn2
+                {
+                    @include  outlinebutton; 
+                    margin: 0;
+                }   
+            }
+           
+        }
+    }
+}
+/*End blog*/
+
+/*Start picture*/
+.picture
+{
+    background-image: url(../../images/bg7.jpg);
+    background-repeat: repeat-x;
+    animation: slideleft 20000s infinite linear;
+    background-size: cover;
+    height: 400px;
+
+@keyframes slideleft 
+    {
+        from {
+            background-position: 0%;
+        }
+
+        to {
+            background-position: 90000%;
+        }
+    }
+}
+/*End picture*/
+
+/*start subscribe*/
+.subscribe
+{
+    padding-top: 50px;
+    text-align: center;
+    @media (min-width:320px) and (max-width:720)
+    {
+    }
+    .row
+    {
+        h1
+        {
+            font-size: 39px;
+            font-weight: bold;
+        }
+        p
+        {
+            color: $paragraphcolor;
+            margin: 25px 0 ;
+        }
+       form
+        {
+            margin: 0 0 0 50px;
+            input
+            {
+                width: 65%;
+                padding: 25px;
+            }
+            button
+            {
+                    padding: 13px 20px;
+            }
+        }
+        img
+        {
+            width: 100%;
+        }
+    }
+}
+/*End subscribe*/
+/*start footer*/
+.footer
+{
+    background-color: #17181b;
+    padding: 50px;
+    @media(min-width:320px) and (max-width:991px)
+    {
+        text-align: center;
+    }
+    .footer1
+    {
+        margin-top: 20px;
+        .navbar-brand
+        {
+
+            h1
+            {
+                display: inline-block;
+                margin: 0;
+                position: relative;
+                top: 12px;
+                color: #ddd;
+                font-family: 'Patua One', cursive;
+            }
+            span
+            {
+                color: red;
+                position: relative;
+                top: -22px;
+                left: -92px;
+                letter-spacing: 6px;
+                font-family: 'Crete Round', serif;
+            }
+        }
+        p
+        {
+            color: $paragraphcolor;
+            font-size: 15px;
+            margin: 35px 0 ;
+        }
+        .sochial
+        {
+            span
+            {
+                color: $paragraphcolor;
+            }
+            @include sochial;
+        }
+    }
+    .contactus
+    {
+        margin-top: 20px;
+        h1
+        {
+            color: #fff;
+            font-weight: bold;
+        }
+        p
+        {
+            line-height: 3rem;
+            color: $paragraphcolor;
+            span
+            {
+                font-size: 16px;
+                display: block;
+            }
+        }
+        h4
+        {
+            color: #fff;
+            margin-bottom: 25px;
+        }
+    }
+    .info
+    {
+        margin-top: 20px;
+        h1
+        {
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        form
+        {
+            text-align: center;
+            input
+            {
+                width: 100%;
+                margin-bottom: 20px;
+                border: none;
+            }
+            textarea
+            {
+                width: 100%;
+                height: 150px;
+                display: block;
+                margin-bottom: 20px;
+            }
+            button
+            {
+                padding: 5px 20px;
+            }
+        }
+    }
+}
+
+/*End footer*/
+/*Start copyright*/
+.copyright
+{
+    background-color: rgba(0, 0, 0, 0.83);
+    color: #fff;
+    padding: 20px 4px;
+    p{
+        margin: 0;
+    }
+}
+/*End copyright*/
+/*ScrollUp*/
+.scrollup
+{
+    width: 50px;
+    height: 40px;
+    position:fixed;
+    right: 10px;
+    bottom: 15px;
+    z-index: 990;
+    display: none;
+    cursor: pointer;
+    i
+    {
+        color: red;
+    }
+}
+/*ScrollUp*/
+/*********************************** Start About Us *************************************************/
+/*start aboutus2*/
+.aboutus2
+{
+    padding: 50px;
+    h1
+    {
+        font-weight: bold;
+        span
+        {
+            color: red;
+        }
+    }
+    p
+    {
+        font-size: 18px;
+        color: $paragraphcolor;
+        margin-bottom: 40px;
+    }
+    h3
+    {
+        margin-bottom: 40px;
+    }
+}
+/*End aboutus2*/
+
+/*Start team*/
+.team
+{
+    padding: 100px 100px 25px 100px;
+    h1
+    {
+        font-weight: bold;
+        span
+        {
+            color: red;
+        }
+    }
+    p
+    {
+        color: $paragraphcolor;
+        font-size:18px;
+        margin-bottom:40px;
+    }
+    .row
+    {
+        .col-sm-12
+        {
+            @media (min-width:320px) and (max-width:768px)
+            {
+                margin-bottom: 50px;
+            }
+        }
+        
+        img
+        {
+            width: 100%;
+            height: 85%;
+        }
+        h5
+        {
+            font-weight: bold;
+            margin: 15px 0;
+            color: red;
+            letter-spacing: 2px;
+        }
+        .sochial
+        {
+            @include sochial;
+            i
+            {
+                margin: 0 5px;
+            }
+        }
+    }
+}
+/*End team*/
+/********************************* End About Us ***************************************/
+
+
+
+/********************************* Start Single ***************************************/
+.single
+{
+    padding: 20px;
+    p:first-child
+    {
+        letter-spacing: 5px;
+        font-size: 25px;
+    }
+    h1
+    {
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        span
+        {
+            color: red;
+        }
+    }
+    .row
+    {
+        .col-xl-8
+        {
+            img
+            {
+                margin-bottom: 20px;
+            }
+            a
+            {
+                font-size: 15px;
+                font-weight: bold;
+                &:hover
+                {
+                    opacity: 0.7;
+                }
+            }
+            p
+            {
+                color:$paragraphcolor;
+                margin:15px 0;
+                line-height: 1.98rem;
+            }
+            h3 , h5
+            {
+                font-weight: bold;
+                margin:15px 0;
+            }
+            .media-body
+            {
+                    margin-left: 25px;
+            }
+            form
+            {
+                input
+                {
+                    width: 100%;
+                    display: block;
+                    margin: 20px 0;
+                }
+                textarea
+                {
+                    width: 100%;
+                    height: 150px;
+                    display: block;
+                    margin: 20px 0;
+                }
+                button
+                {
+                    width: 100%;
+                    background-color: #05c46b;
+                    border: none;
+                    outline: none;
+                    padding: 15px;
+                    letter-spacing: 1.5px;
+                    transition: all 0.5s linear;
+                    &:hover
+                    {
+                        letter-spacing: 5px;
+                        background-color: rgba(2, 222, 120, 0.76);
+                        transition: all 0.5s linear;
+
+                    }
+                }
+            }
+        }
+        .col-xl-4
+        {
+            h3
+            {
+                font-weight: bold;
+            }
+            p
+            {
+                color: $paragraphcolor;
+                margin: 20px 0 5px 0  ; 
+                font-size: 18px;
+            }
+            form
+            {
+                input , button
+                {
+                    width: 100%;
+                    display: block;
+                    margin: 10px 0 ;
+                }
+            }
+            h3
+            {
+                font-weight: bold;
+                margin: 20px 0 ;
+                
+            }
+            ul
+            {
+                .list-item
+                {
+                    &:not(:last-child)
+                    {
+                        border-bottom: 1px solid #ccc;
+                    }
+                    padding: 20px;
+                    margin: 20px 0 ; 
+                    i
+                    {
+                        font-weight: bold;
+                    }
+                    a
+                    {
+                        margin-left: 15px;
+                        font-size: 14px;
+                        color: rgba(105, 105, 105, 0.9);
+                        &:hover
+                        {
+                            color: rgba(42, 42, 255, 0.71);
+                        }
+                    }
+                }
+            }
+            img
+            {
+                width: 50%;
+            }
+            .media
+            {
+                margin: 15px 0 ; 
+                .media-body
+                {
+                    margin-left: 15px;
+                    a
+                    {
+                        font-weight: bold;
+                        margin: 16px 0 7px 0 ;
+                        display: block;
+                        font-size: 13px;
+                        &:hover
+                        {
+                            opacity: 0.7;    
+                        }
+                    }
+                    span
+                    {
+                        color: $paragraphcolor;
+                    }
+                }
+            }
+        }
+    }
+}
+/*************************************************** End Single *******************************/
+
+/*************************************************** Start log in *****************************/
+.login
+{
+    padding: 50px;
+        .login-form
+        {
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 25px 25px #bebebe;
+            padding: 40px;
+            max-width: 500px;
+            h3
+            {
+                margin: 0 0 20px 0 ;
+            }
+            form
+            {
+                display: block;
+                p
+                {
+                    margin: 5px 0;
+                    font-size:15px;
+                }
+                input , button
+                {
+                    width: 100% !important;
+                    display: block; 
+                    margin: 10px 0 15px 0 ;
+                }
+                button
+                {
+                    background-color: rgba(255, 23, 23, 0.83);
+                    color: #fff;
+                    border:none;
+                    padding: 10px;      
+                    margin: 10px 0 25px 0 ;
+                    &:hover 
+                    {
+                        opacity: 0.7;
+                        color: #fff;
+                    }
+                }
+                a
+                {
+                    &:hover
+                    {
+                        color: rgba(42, 42, 255, 0.71);
+                        opacity: 0.7;
+                    }
+                }
+            }
+        } 
+    }
+/*************************************************** End log in ********************************/
+
+/*************************************************** Start register ***************************/
+
+.register
+{
+    padding: 50px;
+    .register-form
+    {
+        margin: 50px auto;
+        border: 1px solid #ccc;
+        box-shadow: 0 25px 25px #bebebe;
+        padding: 40px;
+        max-width: 500px;
+        h3
+        {
+            margin: 0 0 20px 0 ;
+        }
+         form
+            {
+                display: block;
+                p
+                {
+                    margin: 5px 0;
+                    font-size:15px;
+                }
+                input , button
+                {
+                    width: 100% !important;
+                    display: block; 
+                    margin: 10px 0 15px 0 ;
+                }
+                button
+                {
+                    background-color: rgba(255, 23, 23, 0.83);
+                    color: #fff;
+                    border:none;
+                    padding: 10px;      
+                    margin: 25px 0;
+                    &:hover 
+                    {
+                        opacity: 0.7;
+                        color: #fff;
+                    }
+                }
+                a
+                {
+                    text-transform: none; 
+                    display: block;
+                    &:hover
+                    {
+                        color: rgba(42, 42, 255, 0.71);
+                        opacity: 0.7;
+                    }
+                }
+        }
+    }
+}
+    
+/*************************************************** End register ******************************/
+
+/*************************************************** Start menu *******************************/
+.menu
+{
+   h1
+    {
+        font-weight: bold;
+        span
+        {
+            color: red;
+        }
+    }
+    p
+    {
+        font-size: 18px;
+        color: $paragraphcolor;
+        margin-bottom: 40px;
+    }
+    .card
+    {
+        margin: 20px 20px 100px 20px;
+        box-shadow: 0 10px 10px rgba(198, 198, 198, 0.91) ;
+        cursor: pointer;
+        img
+        {
+            width: 100%;
+        }
+        .card-body
+        {
+            padding: 10px 20px;
+            p
+            {
+                color: #9e9e9e;
+                font-size: 22px;
+                text-align: center;
+                margin: 0;
+                span
+                {
+                    color: #000;
+                }
+            }
+        }
+        &:hover
+            {
+                box-shadow: 0 20px 20px #7f807fcf;
+                @media (min-width:991px)
+                {
+                    transform: scale(1.2);
+                }
+                transition: all 0.3s linear;
+            }
+    }
+    .modal-body
+    {
+        padding: 0;
+        p
+        {
+            color: #9e9e9e;
+            font-size: 22px;
+            margin: 0;
+            position: relative;
+            top: 15px;
+            left: 15px;
+            span
+            {
+                color: #000;
+            }
+        }
+       
+    }
+    .btn
+    {
+        @include mainbutton;
+        width: 145px;
+        position: relative;
+        border: none;
+        top: -18px;
+        left: 70%;
+        margin: -4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        i
+        {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    }
+}
+/*************************************************** End menu *****************************/
+
+/*************************************************** Start Contac Us **********************/
+.contactus
+{
+    h1
+    {
+        font-weight: bold;
+        span
+        {
+            color: red;
+        }
+    }
+    p
+    {
+        font-size: 18px;
+        color: $paragraphcolor;
+        margin-bottom: 40px;
+    }
+    .row
+    {
+        h3
+        {
+            color: rgba(12, 216, 12, 0.74);
+            margin: 0 0 30px 0 ;
+             @media (max-width:768px)
+            {
+                text-align: center;
+            }
+        }
+        .media
+        {
+            margin: 20px 0 ; 
+            @media (max-width:768px)
+            {
+                margin-left: 25% ; 
+            }
+            img
+            {
+                width: 25%;
+            
+            }
+            .media-body
+            {
+                margin-left: 20px;
+                margin-top: 12px;
+                h5
+                {
+                    font-weight: bold;
+                }
+                span
+                {
+                    color: #a6a6a6;
+                }
+            }
+        }
+        .info
+        {
+            margin-top: 20px;
+            h1
+            {
+                color: #fff;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            form
+            {
+                input
+                {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    border: 1px solid #ddd;
+                    padding: 25px 30px;
+                }
+                textarea
+                {
+                    width: 100%;
+                    height: 150px;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+                button
+                {
+                    @include mainbutton;
+                    margin-left: 40%;
+                    margin-bottom: 25px;
+                    border: none;
+                    padding: 10px 30px;
+                    &:hover
+                    {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}
+/*Start Map */
+.map
+{
+    iframe
+    {
+        width: 100%;
+        min-height: 500px;
+        position: relative;
+        top: 10px;
+        border: none;
+    }
+}
+/*End Map*/
+/*************************************************** End Contac Us ****************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
